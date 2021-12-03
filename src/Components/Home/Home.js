@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
+import './Home.css';
 
 const Home = () => {
-    return (
-        <div>
-            <p>WELCOME:</p>
-            <h1>we are the mern developer</h1>
-        </div>
-    )
-}
+  return (
+    <>
+      <div className="home_page">
+        <p>WELCOME:</p>
+        <h1>We are The MERN Dveloper</h1>
+      </div>
+    </>
+  );
+};
 
-export default Home
-
-
-
+export default Home;

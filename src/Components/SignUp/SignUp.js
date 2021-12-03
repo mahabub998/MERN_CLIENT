@@ -2,14 +2,15 @@ import React from "react";
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 import signUp3 from "../../images/signUp3.jpg"
 import { NavLink } from 'react-router-dom';
+import "./SignUp.css";
 
 const SignUp = () => {
   return (
     <>
       <section className="signup">
         <div className="container mt-5">
-          <div className="signup-content">
-            <div className="signup-form">
+          <div className="signup-content row">
+            <div className="signup-form col-md-6 col-md-12 col-lg-6">
               <h2 className="form-title"> sign up</h2>
               <form className="register-form" id="register-form">
                 <div className="form-group">
@@ -84,9 +85,9 @@ const SignUp = () => {
                 </div>
               </form>
               </div>
-              <div className="signup-image">
+              <div className="signup-image col-md-6">
                 <figure>
-                 <img src={signUp3} alt="registration pic"  />
+                 <img className="signup_image" src={signUp3} alt="registration pic"  />
                 </figure>
                 <NavLink to="/login" className="signup-image-link">I am already register</NavLink>
               </div>

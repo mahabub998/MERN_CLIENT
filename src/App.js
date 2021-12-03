@@ -9,7 +9,7 @@ import SignUp from './Components/SignUp/SignUp';
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
    <Routes>
    <Route exact path="/" element={<Home />}/>
@@ -18,7 +18,7 @@ function App() {
    <Route path="/login" element={<Login />}/>
    <Route path="/signUp" element={<SignUp />}/>
    </Routes>
-    </div>
+    </>
   );
 }
 
