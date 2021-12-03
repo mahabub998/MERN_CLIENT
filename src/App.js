@@ -6,6 +6,7 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Login from "./Components/Login/Login";
 import SignUp from './Components/SignUp/SignUp';
+import ErrorPage from './Components/ErrorPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
    <Route path="/contact" element={<Contact />}/>
    <Route path="/login" element={<Login />}/>
    <Route path="/signUp" element={<SignUp />}/>
+   <Route path="*" element={<ErrorPage />}/>
    </Routes>
     </>
   );
